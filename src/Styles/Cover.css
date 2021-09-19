@@ -1,0 +1,79 @@
+.Cover {
+  /* background-color: cornflowerblue; */
+  width: 100%;
+  margin: 100px 0 100px 0;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Cover-container {
+  /* background-color: crimson; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+}
+
+.Row {
+  /* background-color: cyan; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+}
+
+.Row-heading {
+  margin: 0px 0 30px 0;
+}
+
+p {
+  font-size: 22px;
+  font-weight: 500px;
+}
+
+.Cover-left,
+.Cover-right {
+  /* background-color: darkorchid; */
+  width: 40%;
+}
+
+.Cover-left {
+  text-align: right;
+}
+
+.Card-right {
+  padding-left: 100px;
+}
+
+.Cover-img {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 15px;
+  width: 150px;
+  height: 150px;
+  transform: rotate(45deg);
+  box-shadow: 15px 15px 20px grey;
+}
+
+.img {
+  height: 150px;
+}
+
+.Cover-button {
+  margin-top: 50px;
+  height: 60px;
+  width: 180px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.Cover-button:hover {
+  background-color: black;
+  color: white;
+}
