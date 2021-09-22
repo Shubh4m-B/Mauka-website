@@ -1,7 +1,15 @@
 import React from 'react'
+import Cohort from './Cohort';
 import "../Styles/Navbar.css"
 
 export default function Navbar() {
+
+    const [open, setOpen] = React.useState(false);
+
+    const handleClick = () => {
+        setOpen(!open);
+    }
+
     return (
         <div className="Navbar">
             <div className="Navbar-logo">
@@ -9,12 +17,15 @@ export default function Navbar() {
                 <h1 className="Navbar-title">Mauka</h1>
             </div>
             <div className="Navbar-links">
-                <li><h3>Bootcamp</h3></li>
-                <li><h3>Demo</h3></li>
-                <li><h3>Blog</h3></li>
-                <li><h3>Cohorts</h3></li>
-                <li><h3>Talk to us</h3></li>
-                <li><h3>Login</h3></li>
+                <li><h3><a href="#">Bootcamp</a></h3></li>
+                <li><h3><a href="#">Demo</a></h3></li>
+                <li><h3><a href="#">Blog</a></h3></li>
+                <li className="Cohort-li">
+                    <h3><a href="#" onClick={handleClick}>Cohorts <i class="fa fa-chevron-down" aria-hidden="true"></i></a></h3>
+                    <Cohort open={open} />
+                </li>
+                <li><h3><a href="#">Talk to us</a></h3></li>
+                <li><h3><a href="#">Login</a></h3></li>
                 <button className="Navbar-button">
                     <h3>Enroll Now</h3>
                 </button>

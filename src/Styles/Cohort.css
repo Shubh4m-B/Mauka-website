@@ -1,0 +1,64 @@
+.Cohort {
+  /* background-color: aqua; */
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  margin-top: 10px;
+  width: 35vw;
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.Cohort-zero {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blanchedalmond; */
+}
+
+.Cohort-one {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  height: 300px;
+}
+
+.Cohort-title {
+  margin-bottom: 30px;
+}
+
+.Cohort-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.Cohort-links > p > a {
+  text-decoration: none;
+  color: black;
+}
+
+.Cohort-links > p > a:hover {
+  text-decoration: underline;
+}
+
+.Cohort-button {
+  height: 60px;
+  width: 180px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.Cohort-button:hover {
+  background-color: black;
+  color: white;
+}
